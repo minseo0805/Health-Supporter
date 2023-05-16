@@ -24,7 +24,7 @@ public class timer extends AppCompatActivity {
         setContentView(R.layout.activity_timer);
 
         chronometer = findViewById(R.id.chronometer);
-        chronometer.setFormat("시간: %s");
+        chronometer.setFormat("TIME: %s");
 
         Button startBtn = findViewById(R.id.start_btn);
         Button stopBtn = findViewById(R.id.stop_btn);
