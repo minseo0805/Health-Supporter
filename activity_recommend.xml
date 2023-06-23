@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recommend">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:text="헬스 도우미"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="290dp"
+        android:text="요일을 선택하세요"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/monday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="140dp"
+        android:text="월"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tuesday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="140dp"
+        android:text="화"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/monday_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wednesday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="140dp"
+        android:text="수"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/thursday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="140dp"
+        android:text="목"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/friday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="140dp"
+        android:text="금"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saturday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="140dp"
+        android:text="토"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sunday_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="140dp"
+        android:text="일"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="293dp"
+        android:text="어떤 운동을 하실거에요?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 다른 속성들을 필요에 따라 추가할 수 있습니다 -->
+
+
+
+
+    <CheckBox
+        android:id="@+id/chk_chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="가슴"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <CheckBox
+        android:id="@+id/chk_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="등"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/chk_chest"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <CheckBox
+        android:id="@+id/chk_shoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="어깨"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/chk_back"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <CheckBox
+        android:id="@+id/chk_leg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="하체"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk_chest" />
+
+
+    <CheckBox
+        android:id="@+id/chk_abs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:text="복근"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/chk_leg"
+        app:layout_constraintTop_toBottomOf="@+id/chk_back" />
+
+    <CheckBox
+        android:id="@+id/chk_arm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="팔"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/chk_abs"
+        app:layout_constraintTop_toBottomOf="@+id/chk_shoulder" />
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="75dp"
+        android:text="추가"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/cancle_button"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="75dp"
+        android:text="취소"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/add_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="등록"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_spinner" />
+
+    <Spinner
+        android:id="@+id/exercise_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="350dp"
+        android:contentDescription="운동 종목"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/setsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="세트 수"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_spinner" />
+
+    <EditText
+        android:id="@+id/repsEditText"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:hint="횟수"
+        app:layout_constraintEnd_toStartOf="@+id/register_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_spinner" />
+
+
+    <ImageButton
+        android:id="@+id/star_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="400dp"
+        android:contentDescription="추천"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

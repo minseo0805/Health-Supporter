@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:text="헬스 도우미"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Id"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_Id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Id" />
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_Password"
+        app:layout_constraintStart_toStartOf="@+id/et_Password"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
+
+    <EditText
+        android:id="@+id/et_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="나이"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_Name"
+        app:layout_constraintStart_toStartOf="@+id/et_Name"
+        app:layout_constraintTop_toBottomOf="@+id/et_Name" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="회원가입"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_Age"
+        app:layout_constraintStart_toStartOf="@+id/et_Age"
+        app:layout_constraintTop_toBottomOf="@+id/et_Age" />
+
+    <Button
+        android:id="@+id/btn_doublecheck"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="200dp"
+        android:text="중복확인"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_Id"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
